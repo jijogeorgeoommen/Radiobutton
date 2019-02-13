@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      >
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Single Radio Button"
+      android:textSize="30dp"
+      android:textColor="#fdf6f6"
+      android:textStyle="bold"
+      android:gravity="center"
+      />
+
+  </LinearLayout>
+    <RadioButton
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Radio Button 1"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:textStyle="italic"
+        />
+
+   <RadioButton
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:text="Radio Button 2"
+       android:textStyle="italic"
+       android:textSize="25dp"
+       android:textColor="#000"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio Button inside Radio Group"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgroup"
+        >
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:checked="false"
+            android:id="@+id/rbmale"
+            />
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="25dp"
+            android:textColor="#000"
+            android:checked="false"
+            android:id="@+id/rbfemale"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Show Selected"
+            android:background="#000"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:id="@+id/showbtn"
+            android:onClick="bttun"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
